@@ -1,104 +1,42 @@
-<h2 class="ui center aligned icon header">
-  <i class="circular green users icon"></i>
-  Message_Me
-</h2>
-
+<h4 class="ui center aligned medium icon header">
+  <i class="circular green comment alternate outline icon"></i>
+  Say Something
+</h4>
 <div class="ui two column grid">
   <div class="twelve wide column">
     <div class="ui fluid raised card chatbox">
-      <<div class="content">
-        <div class="ui large feed">
-          <div class="event">
-            <div class="label">
-              <img src="/images/avatar/small/elliot.jpg">
-            </div>
-            <div class="content">
-              <div class="summary">
-                <em class="user">
-                  Elliot Fu
-                </em> added you as a friend
-                <div class="date">
-                  1 Hour Ago
-                </div>
-              </div>
-              <div class="meta">
-                <a class="like">
-                  <i class="like icon"></i> 4 Likes
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="event">
-            <div class="label">
-              <i class="pencil icon"></i>
-            </div>
-            <div class="content">
-              <div class="summary">
-                You submitted a new post to the page
-                <div class="date">
-                  3 days ago
-                </div>
-              </div>
-              <div class="extra text">
-                I'm having a BBQ this weekend. Come by around 4pm if you can.
-              </div>
-              <div class="meta">
-                <a class="like">
-                  <i class="like icon"></i> 11 Likes
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="event">
-            <div class="label">
-              <img src="/images/avatar/small/helen.jpg">
-            </div>
-            <div class="content">
-              <div class="date">
-                4 days ago
-              </div>
-              <div class="summary">
-                <em>Helen Troy</em> added <em>2 new illustrations</em>
-              </div>
-              <div class="extra images">
-              </div>
-              <div class="meta">
-                <a class="like">
-                  <i class="like icon"></i> 1 Like
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="extra content">
-          <form class="ui reply form">
-            <div class="field">
-              <div class="ui fluid input">
-                <input type="text" placeholder="Enter Message...">
-                <i class="bordered inverted green edit icon"></i>
-              </div>
-            </div>
-          </form>
+      <div class="content">
+        <div class="ui feed">
+          <%= render @messages %>
         </div>
       </div>
+      <div class="extra content">
+        <form class="ui reply form">
+          <div class="field">
+            <div class="ui fluid icon input">
+              <input type="text" placeholder="Enter a message...">
+              <i class="bordered inverted green edit icon"></i>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
-  <div class="ui inverted vertical menu">
-    <a class="active item">
-      Home
-    </a>
-    <a class="item">
-      Messages
-    </a>
-    <a class="item">
-      Friends
-    </a>
   </div>
   <div class="four wide column">
     <div class="ui fluid raised card chatbox">
       <div class="content">
-      </a>
+        <div class="ui inverted vertical menu">
+          <a class="active item">
+            Home
+          </a>
+          <a class="item">
+            Messages
+          </a>
+          <a class="item">
+            Friends
+          </a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 </div>
